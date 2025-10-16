@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-
+@Table(name = "Categorias")
 public class Categoria {
 
     // Atributos
