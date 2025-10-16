@@ -5,6 +5,8 @@ import lombok.Setter;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -28,7 +30,7 @@ public class Autor {
 
     @OneToMany
     @JoinColumn(name = "id_libro", nullable = false)
-    private Libro[] libros;
+    private List<Libro> libros;
 
     // Constructor vacío
     public Autor() {

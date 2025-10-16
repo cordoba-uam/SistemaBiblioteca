@@ -20,10 +20,6 @@ public class Categoria {
     @Column(name = "nombre", nullable = false)
     private String nombre;
 
-    @ManyToMany
-    @JoinColumn(name = "id_libro", nullable = false)
-    private Libro[] libros;
-
     // Constructor vacío
     public Categoria() {
 
