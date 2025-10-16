@@ -9,7 +9,6 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name = "autores")
 public class Autor {
 
     // Atributos
