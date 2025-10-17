@@ -28,10 +28,6 @@ public class Autor {
     @Column(name = "fecha_nacimiento", nullable = false)
     private String fechaNacimiento;
 
-    @OneToMany
-    @JoinColumn(name = "id_libro", nullable = false)
-    private List<Libro> libros;
-
     // Constructor vacío
     public Autor() {
 

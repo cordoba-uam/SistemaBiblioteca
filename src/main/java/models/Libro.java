@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -31,12 +32,11 @@ public class Libro {
 
     @ManyToMany
     @JoinTable(
-            name = "Categoria_Libro",
-            joinColumns = @JoinColumn(name = "id_categoria"),
-            inverseJoinColumns = @JoinColumn(name = "id_libro")
+            name = "Libros_Categorias",
+            joinColumns = @JoinColumn(name = "id_libro"),
+            inverseJoinColumns = @JoinColumn(name = "id_categoria")
     )
-    private List<Categoria> categoria;
-
+    private List<Categoria> categoria = new ArrayList<>();
 
     // Constructor vacío
     public Libro() {
